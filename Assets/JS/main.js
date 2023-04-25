@@ -11,25 +11,21 @@ const showMenu = (toggleId,navId) => {
 }
 showMenu('nav-toggle','nav-menu',)
 
-
 /* --- ACTIVE AND REMOVE MENU---*/
-const navLink = document.querySelectorAll('.nav_link');
+const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
     //Active link
-    navLink.forEach(n => n.classList.remove('active'));
+    navLink.forEach(n => n.classList.remove('active'))
     this.classList.add('active');
 
-    //remove menu mobile
-    const navMenu = document.getElementById('nav_menu')
+    //Remove menu mobile
+    const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show');
-
 }
-
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-
-//sticky scroll navbar
+/*  ---- sticky scroll navbar ----  */ 
 var nav = document.getElementById('nav-menu');
 window.scroll = function (){
     if(window.pageYOffset > 100){
@@ -41,42 +37,6 @@ window.scroll = function (){
         nav.style.top = 100;
     }
 }
-
-/* --- SCROLL REVEAL ANIMATION--*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-})
-
-/* --- SCROLL HOME---*/
-sr.reveal('.home_title',{})
-sr.reveal('.home_description',{delay:200})
-sr.reveal('.button',{delay:400})
-sr.reveal('.home_img',{delay:400})
-sr.reveal('.home_social-icon',{interval: 200})
-
-/* --- SCROLL ABOUT---*/
-sr.reveal('.about_img',{})
-sr.reveal('.about_subtitle',{delay:200})
-sr.reveal('.about_text',{delay:400})
-sr.reveal('.button',{delay:600})
-
-/* --- SCROLL SKILLS---*/
-sr.reveal('.skills_subtitle',{})
-sr.reveal('.skills_data',{delay:200})
-sr.reveal('.skills_img',{delay:400})
-
-/* --- SCROLL Qualification---*/
-sr.reveal('.education_title .experience_title',{})
-sr.reveal('.education_item, .experience_item',{delay:200})
-
-/* --- SCROLL CONTACT---*/
-sr.reveal('.section_subtitle',{})
-sr.reveal('.contact_list',{delay:200})
-sr.reveal('.contact_form',{delay:400})
-
 
 /*  ---- Contact Form ----  */ 
 const myForm = document.querySelector('#contact-form');
@@ -92,12 +52,14 @@ submitBtn.addEventListener('click', function(e) {
   if (nameInput.value.trim() === '' || 
       emailInput.value.trim() === '' || 
       messageInput.value.trim() === '') {
+           contactMessage.style.color = '#9d0707';
            contactMessage.textContent = 'Write all the input fields';
            setTimeout(()=> {
             contactMessage.textContent = '';
         },1000);
 
   } else {
+    contactMessage.style.color = 'green';
     contactMessage.textContent = 'Message sent successfully!';
     myForm.reset();
     setTimeout(()=> {
@@ -105,3 +67,42 @@ submitBtn.addEventListener('click', function(e) {
         },3000);
     }
 });
+
+/* --- SCROLL REVEAL ANIMATION--*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+/* --- SCROLL HOME---*/
+sr.reveal('.home_title',{})
+sr.reveal('.home_subtitle',{delay:100})
+sr.reveal('.home_description',{delay:200})
+sr.reveal('.button',{delay:300})
+sr.reveal('.home_img',{delay:400})
+sr.reveal('.home_social-icon',{interval: 200})
+
+/* --- SCROLL ABOUT---*/
+sr.reveal('.about_img',{})
+sr.reveal('.about_subtitle',{delay:200})
+sr.reveal('.about_text',{delay:300})
+sr.reveal('.button',{delay:400})
+
+/* --- SCROLL SKILLS---*/
+sr.reveal('.skills_subtitle',{})
+sr.reveal('.skills_data',{delay:200})
+sr.reveal('.skills_img',{delay:400})
+
+/* --- SCROLL Qualification---*/
+sr.reveal('.education_title .experience_title',{})
+sr.reveal('.education_item, .experience_item',{delay:200})
+
+/* --- SCROLL Projects---*/
+sr.reveal('.project',{delay:200})
+
+/* --- SCROLL CONTACT---*/
+sr.reveal('.section_subtitle',{})
+sr.reveal('.contact_list',{delay:200})
+sr.reveal('.contact_form',{delay:400})

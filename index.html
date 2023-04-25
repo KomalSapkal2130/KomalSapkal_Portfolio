@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav_logo">My Portfolio</a>
+                <a href="#" class="nav_logo">Portfolio</a>
             </div>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
@@ -24,7 +24,7 @@
                     <li class="nav_item"><a href="#about" class="nav_link">ABOUT</a></li>
                     <li class="nav_item"><a href="#skills" class="nav_link">SKILLS</a></li>
                     <li class="nav_item"><a href="#qualification" class="nav_link">QUALIFICATION</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">PROJECT</a></li>
+                    <li class="nav_item"><a href="#projects" class="nav_link">PROJECT</a></li>
                     <li class="nav_item"><a href="#contact" class="nav_link">CONTACT</a></li>
                 </ul>
             </div>
@@ -38,23 +38,20 @@
     <main class="main">
 
         <!-- HOME -->
-        <section class="home bd-grid" id="home">
-            <div class="home_data">
-                <h2 class="home_title">Hi, <br>I'am <span class="home_title-color">Komal</span><br>A Front-End Developer</h2>
-                <p class="home_description">To obtain a responsible and challenging Front End Developer’s position
-                    <br> where my education and work experience will have valuable application.</p>
-                <a href="#about" class="button"> About Me</a>
-            </div>
-
-            <div class="home_social">
-                <a href="https://www.linkedin.com/in/komal-sapkal-29926818a/" class="home_social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/KomalSapkal2130" class="home_social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
-                
-            </div>
-
-            <div class="home_img">
-                <img src="Assets/img/profile_home.png" alt="">
-            </div>
+        <section class="home section" id="home">
+            <div class="home_container bd-grid">
+        
+                <div class="home_data">
+                    <h2 class="home_title">Hi, I'm <span class="home_title-color">Komal</span></h2>
+                    <h3 class="home_subtitle">Frontend Developer</h3>
+                    <p class="home_description">To obtain a responsible and challenging Front End Developer's position
+                      where my education and work experience will have valuable application.</p>
+                    <a href="#about" class="button">About Me</a>
+                </div>
+                <div class="home_img">
+                    <img src="Assets/img/profile_home.png" alt="">
+                </div>
+            </div>    
         </section>
 
         <!-- ABOUT -->
@@ -64,13 +61,17 @@
                 <div class="about_img">
                     <img src="Assets/img/profile_about.png">
                 </div>
-                <div>
+                <div class="about_data">
                     <h2 class="about_subtitle">I'am Komal Sapkal</h2>
-                    <p class="about_text">I'm truly passionate about front-end development and enjoy the challenge of creating visually stunning and user-friendly interfaces. 
-                        I have experience in HTML, CSS, JavaScrip and React. During my Internship, I worked on several projects where I developed responsive websites using these technologies. I have always been fascinated by web development and I am excited to start my career in front-end development.I believe that user experience is key to a successful website. I focus on creating clean and intuitive designs that are easy to navigate and provide a seamless user experience.</p>
-                <a href="Assets/img/Komal_sapkal_resume.pdf" class="button" download ="" target="_blank"><i class='bx bxs-download bx-flashing' ></i> DOWNLOAD CV</a>
+                    <p class="about_text">I'm truly passionate about frontend development and enjoy the challenge 
+                        of creating visually stunning and user-friendly interfaces. I have experience in HTML, CSS,
+                        JavaScript and React. During my Internship, I worked on project where I developed responsive 
+                        websites using these technologies. I have always been fascinated by web development and
+                         I am excited to start my career in front-end development.I believe that user experience is 
+                         key to a successful website. I focus on creating clean and intuitive designs that are easy
+                          to navigate and provide a seamless user experience.</p>
+                <a href="Assets/img/Komal's Resume.pdf" class="button" download ="" target="_blank"><i class='bx bxs-download bx-flashing' ></i> DOWNLOAD CV</a>
                 </div>
-               
             </div>
         
            </section>
@@ -82,14 +83,14 @@
             <div class="skills_container bd-grid">
 
                 <div>
-                    <h3 class="section_title text-sm">FRONTEND</h3>
+                    <h3 class="skill_title text-sm">FRONTEND</h3>
 
                         <div class="skills_data">
                             <div class="skills_names">
                                  <span class="skills_name">HTML5</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">90%</span>
+                                <span class="skills_percentage">80%</span>
                             </div>
 
                             <div class="skills_bar skills_html"></div>   
@@ -99,7 +100,7 @@
                                  <span class="skills_name">CSS</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">85%</span>
+                                <span class="skills_percentage">70%</span>
                             </div>
 
                             <div class="skills_bar skills_css"></div>   
@@ -109,7 +110,7 @@
                                  <span class="skills_name">JAVASCRIPT</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">80%</span>
+                                <span class="skills_percentage">75%</span>
                             </div>
 
                             <div class="skills_bar skills_javascript"></div>   
@@ -119,21 +120,21 @@
                                  <span class="skills_name">REACT JS</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">75%</span>
+                                <span class="skills_percentage">65%</span>
                             </div>
 
                             <div class="skills_bar skills_react"></div>   
                         </div>
                  </div>
                  <div>
-                    <h3 class="section_title text-sm">BACKEND</h3>
+                    <h3 class="skill_title text-sm">BACKEND</h3>
 
                         <div class="skills_data">
                             <div class="skills_names">
                                  <span class="skills_name">C#</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">80%</span>
+                                <span class="skills_percentage">60%</span>
                             </div>
 
                             <div class="skills_bar skills_Csharp"></div>   
@@ -143,7 +144,7 @@
                                  <span class="skills_name">ASP.NET WEB API</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">85%</span>
+                                <span class="skills_percentage">70%</span>
                             </div>
 
                             <div class="skills_bar skills_api"></div>   
@@ -153,7 +154,7 @@
                                  <span class="skills_name">SQL</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">90%</span>
+                                <span class="skills_percentage">65%</span>
                             </div>
 
                             <div class="skills_bar skills_sql"></div>   
@@ -163,27 +164,21 @@
                                  <span class="skills_name">Mongo DB</span>
                             </div>
                             <div> 
-                                <span class="skills_percentage">65%</span>
+                                <span class="skills_percentage">60%</span>
                             </div>
 
                             <div class="skills_bar skills_mongo"></div>   
                         </div>
                  </div>
 
-                 <div>
-                    <img src="Assets/img/skills.jpg" alt="" class="skills_img">
-                </div> 
-   
             </div>
            
-            </div>
-
         </section>
 
 
         <!-- QUALIFICATION -->
         <section class="qualification section" id="qualification">
-            <h2 class="section-title">Education & Experience</h2>
+            <h2 class="section-title">Qualification</h2>
             <div class="qualification_container bd-grid">
 
                 <div class="education_data">
@@ -228,11 +223,45 @@
            
         </section>
         
+        <!-- PROJECTS -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+                <div class="projects_container  bd-grid">
+                    <div class="project-list">
+                        <div class="project">
+                            <img src="Assets/img/project1_calculator.png" alt="">
+                            <div class="layer">
+                                <h3>Calculator</h3>
+                                <p>A simple calculator app built using HTML, CSS and JavaScript. 
+                                   It is designed to simplify calculations by performing basic 
+                                   arithmetic operations such as addition,substraction, 
+                                   multiplication and division.</p>
+                                <a href="https://komalsapkal2130.github.io/CalculatorProject/" target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="Assets/img/project2_counter.png" alt="">
+                            <div class="layer">
+                                <h3>Counter</h3>
+                                <p>A simple Counter app built using HTML, CSS and JavaScript. 
+                                   The basic components of a counter app include a display screen
+                                   to show the current count, buttons to increase or decrease the
+                                   count, and the ability to reset the count back to zero.</p>
+                                <a href="https://komalsapkal2130.github.io/Counter/" target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>           
+        
+        </section>
+
         <!-- CONTACT -->
         <section class="contact section" id="contact">
-
         <div class="contact_content container ">
             <h2 class="section_title">Get in touch_</h2>
+            
             <div class="contact_container bd-grid">
                 <div class="contact_info">
                    <div class="contact_list">
@@ -242,51 +271,37 @@
                     <dd> komalsapakal2001@gmail.com</dd>
                     <dt> Address : </dt>
                     <dd> At post Kole-415103, Tal-Karad, Dist-Satara.</dd>
-                    <ul class="contact_socials">
-                        <li>
-                            <a href="https://www.linkedin.com/in/komal-sapkal-29926818a/" class="home_social-icon"><i class='bx bxl-linkedin'></i></a>
-                                                    </li>
-                        <li>
-                            <a href="https://github.com/KomalSapkal2130" class="home_social-icon"><i class='bx bxl-github' ></i></a>
-                        </li>
-                    </ul>
-                </div> 
+                    </div> 
                 </div>
 
                 <div class="contact_form">
                     <p class="contact_form-title"> Or just write me a letter here_</p>
                     
-                    <form action="" id="contact-form">
-                        <div class="contact_input-div">
-                            <input type="text" class="contact_input" id="contact-name" placeholder="Your name" required/>
-                        </div>
+                    <form id="contact-form">
+                            <input type="text" class="contact_input" id="contact-name" placeholder="Your name"/>
+                            <input type="email" class="contact_input" id="contact-email" placeholder="Your e-mail" />
 
-                        <div class="contact_input-div">
-                            <input type="email" class="contact_input" id="contact-email" placeholder="Your e-mail" required/>
-                        </div>
-
-                        <div class="contact_input-div">
-                            <textarea  placeholder="Type the message here" class="contact_input textarea" id="message" cols="30" rows="10" required>
-                            </textarea>
-                        </div>
-
-                        <p class="contact_message text-sm" id="contact-message">Message</p>
-                        
-                        <button type="submit" class="button contact_button" id="submitbtn">SEND</button>
-                    
+                            <textarea class="contact_input textarea" id="message" rows="6"  placeholder="Type message here"></textarea>
+                            <p class="contact_message text-sm" id="contact-message">Message</p>
+                            <button type="submit" class="button contact_button" id="submitbtn">SEND</button>
                     </form>
                 </div>
             </div>
         </div>  
 
         </section>
+
      </main>
 
     <!--FOOTER-->   
      <footer class="footer">
         <p class="footer_title">Komal</p>
         <div class="footer_social">
-            <a href="https://www.instagram.com/komal_sapkal__/" class="footer_icon"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/komal-sapkal-29926818a/" class="footer_icon"><i class='bx bxl-linkedin'></i></a>
+           
+                <a href="https://github.com/KomalSapkal2130" class="footer_icon"><i class='bx bxl-github' ></i></a>
+           
+                <a href="https://www.instagram.com/komal_sapkal__/" class="footer_icon"><i class='bx bxl-instagram'></i></a>
         </div>
         <p>&#169; 2023 copyright all right reserved</p>
      </footer>
@@ -294,9 +309,6 @@
 
     <!-- Scroll reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- Email JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- Main JS -->
     <script src="Assets/JS/main.js"></script>
